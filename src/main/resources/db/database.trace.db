@@ -1,0 +1,166 @@
+2017-06-15 13:16:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ISCOMPLETE" not found; SQL statement:
+INSERT INTO Todos(name,isComplete, isEdited) values (?,?,isEdited) [42122-191]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:680)
+	at org.h2.command.Parser.parseColumn(Parser.java:866)
+	at org.h2.command.Parser.parseColumnList(Parser.java:850)
+	at org.h2.command.Parser.parseInsert(Parser.java:1050)
+	at org.h2.command.Parser.parsePrepared(Parser.java:411)
+	at org.h2.command.Parser.parse(Parser.java:315)
+	at org.h2.command.Parser.parse(Parser.java:287)
+	at org.h2.command.Parser.prepareCommand(Parser.java:252)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:276)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1122)
+	at org.sql2o.Query.<init>(Query.java:62)
+	at org.sql2o.Connection.createQuery(Connection.java:83)
+	at org.sql2o.Connection.createQuery(Connection.java:70)
+	at org.sql2o.Connection.createQuery(Connection.java:102)
+	at com.teamtreehouse.techdegrees.dao.Sql2oTodoDao.add(Sql2oTodoDao.java:27)
+	at com.teamtreehouse.techdegrees.App.lambda$main$1(App.java:28)
+	at spark.ResponseTransformerRouteImpl$1.handle(ResponseTransformerRouteImpl.java:47)
+	at spark.webserver.MatcherFilter.doFilter(MatcherFilter.java:162)
+	at spark.webserver.JettyHandler.doHandle(JettyHandler.java:61)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119)
+	at org.eclipse.jetty.server.Server.handle(Server.java:517)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:302)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:245)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-15 13:16:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ISCOMPLETE" not found; SQL statement:
+INSERT INTO Todos(name,isComplete, isEdited) values (?,?,isEdited) [42122-191]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:680)
+	at org.h2.command.Parser.parseColumn(Parser.java:866)
+	at org.h2.command.Parser.parseColumnList(Parser.java:850)
+	at org.h2.command.Parser.parseInsert(Parser.java:1050)
+	at org.h2.command.Parser.parsePrepared(Parser.java:411)
+	at org.h2.command.Parser.parse(Parser.java:315)
+	at org.h2.command.Parser.parse(Parser.java:287)
+	at org.h2.command.Parser.prepareCommand(Parser.java:252)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:276)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1122)
+	at org.sql2o.Query.<init>(Query.java:62)
+	at org.sql2o.Connection.createQuery(Connection.java:83)
+	at org.sql2o.Connection.createQuery(Connection.java:70)
+	at org.sql2o.Connection.createQuery(Connection.java:102)
+	at com.teamtreehouse.techdegrees.dao.Sql2oTodoDao.add(Sql2oTodoDao.java:27)
+	at com.teamtreehouse.techdegrees.App.lambda$main$1(App.java:28)
+	at spark.ResponseTransformerRouteImpl$1.handle(ResponseTransformerRouteImpl.java:47)
+	at spark.webserver.MatcherFilter.doFilter(MatcherFilter.java:162)
+	at spark.webserver.JettyHandler.doHandle(JettyHandler.java:61)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119)
+	at org.eclipse.jetty.server.Server.handle(Server.java:517)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:302)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:245)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-15 13:48:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:48:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:50:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:50:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:50:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:50:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:50:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:50:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:50:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:50:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:53:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:53:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:55:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:55:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= ?, EDITED: EDITED WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= ?, edited: edited where id = ? [42001-191]
+2017-06-15 13:58:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= 1, EDITED: 1 WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= 1, edited: 1 WHERE id = ? [42001-191]
+2017-06-15 13:58:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= 1, EDITED: 1 WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= 1, edited: 1 WHERE id = ? [42001-191]
+2017-06-15 14:01:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= 1, EDITED: 1 WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= 1, edited: 1 WHERE id = ? [42001-191]
+2017-06-15 14:01:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= 1, EDITED: 1 WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= 1, edited: 1 WHERE id = ? [42001-191]
+2017-06-15 14:02:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= 1, EDITED= 1 WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= 1, edited= 1 WHERE id = ? [42001-191]
+2017-06-15 14:02:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= 1, EDITED= 1 WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= 1, edited= 1 WHERE id = ? [42001-191]
+2017-06-15 14:08:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= '1', EDITED= '1' WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= '1', edited= '1' WHERE id = ? [42001-191]
+2017-06-15 14:08:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = ?, COMPLETED= '1', EDITED= '1' WHERE ID = ? "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = ?, completed= '1', edited= '1' WHERE id = ? [42001-191]
+2017-06-15 14:50:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = LEL, COMPLETED= '1', EDITED= '1' WHERE ID = '2' "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = lel, completed= '1', edited= '1' WHERE id = '2' [42001-191]
+2017-06-15 14:50:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = LEL, COMPLETED= '1', EDITED= '1' WHERE ID = '2' "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = lel, completed= '1', edited= '1' WHERE id = '2' [42001-191]
+2017-06-15 14:51:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = 'lel', COMPLETED= '1', EDITED= '1' WHERE ID = '2' "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = 'lel', completed= '1', edited= '1' WHERE id = '2' [42001-191]
+2017-06-15 14:51:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDTATE[*] TODOS SET NAME = 'lel', COMPLETED= '1', EDITED= '1' WHERE ID = '2' "; expected "UPDATE, USE, {"; SQL statement:
+UPDTATE todos SET name = 'lel', completed= '1', edited= '1' WHERE id = '2' [42001-191]
